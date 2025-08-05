@@ -24,14 +24,13 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <p className="text-muted-foreground mb-6">
                 Moon Aviation Services was founded with a vision to provide exceptional 
-                aviation consulting and operational services. With years of experience 
-                in the aviation industry, we understand the unique challenges and 
-                requirements that our clients face.
+                aviation consulting and operational services. We work with clients, 
+                providing services that are catered specifically to the client's needs.
               </p>
               <p className="text-muted-foreground mb-6">
-                Our team of experts brings together extensive knowledge in aircraft 
-                operations, maintenance, regulatory compliance, and safety management 
-                to deliver solutions that exceed expectations.
+                Our expertise combines intuition, ingenuity, and cooperation to deliver 
+                comprehensive aviation solutions. With our 24X7 Operations Control Center, 
+                we ensure continuous support for all your aviation requirements.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">

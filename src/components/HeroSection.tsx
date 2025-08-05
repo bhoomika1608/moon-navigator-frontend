@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from "lucide-react";
-import aircraftEngineHero from "@/assets/aircraft-engine-hero.jpg";
+import { Link } from "react-router-dom";
+import heroImage from "@/assets/moon-aviation-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,8 +9,8 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src={aircraftEngineHero}
-          alt="Aircraft Engine"
+          src={heroImage}
+          alt="Moon Aviation Flight Support"
           className="w-full h-full object-cover"
         />
         <div 
@@ -55,13 +56,15 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            size="lg"
-            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-aviation-blue text-lg px-8"
-          >
-            Our Services
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+          <Link to="/services">
+            <Button 
+              size="lg"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-aviation-blue text-lg px-8"
+            >
+              Our Services
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
 

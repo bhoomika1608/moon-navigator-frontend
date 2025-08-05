@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Plane, MapPin, Clock, Shield } from "lucide-react";
-import airportServices from "@/assets/airport-services.jpg";
+import laguardiaImage from "@/assets/laguardia-airport.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -52,8 +52,8 @@ const ServicesSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="order-2 lg:order-1">
             <img
-              src={airportServices}
-              alt="Airport Services"
+              src={laguardiaImage}
+              alt="PERMITS & AIRPORT SLOTS - LaGuardia Airport"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
