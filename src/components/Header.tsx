@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Plane } from "lucide-react";
 
@@ -24,21 +25,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/home" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors">
               About
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#gallery" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors">
               Gallery
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Contact Info & Mobile Menu Button */}
@@ -64,21 +65,21 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pt-4 border-t border-border">
             <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors py-2">
+              <Link to="/home" className="text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
                 Home
-              </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors py-2">
+              </Link>
+              <Link to="/about" className="text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
                 About
-              </a>
-              <a href="#services" className="text-foreground hover:text-primary transition-colors py-2">
+              </Link>
+              <Link to="/services" className="text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
                 Services
-              </a>
-              <a href="#gallery" className="text-foreground hover:text-primary transition-colors py-2">
+              </Link>
+              <Link to="/gallery" className="text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
                 Gallery
-              </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors py-2">
+              </Link>
+              <Link to="/contact" className="text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
                 Contact
-              </a>
+              </Link>
               <div className="pt-4 border-t border-border">
                 <p className="text-sm text-muted-foreground">ops@moonaviationservices.com</p>
                 <p className="text-sm font-semibold text-foreground">+91 9910393737</p>
