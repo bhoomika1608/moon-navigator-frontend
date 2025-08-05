@@ -26,7 +26,15 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
+				},
+				aviation: {
+					blue: 'hsl(var(--aviation-blue))',
+					'blue-light': 'hsl(var(--aviation-blue-light))',
+					'blue-dark': 'hsl(var(--aviation-blue-dark))',
+					gray: 'hsl(var(--aviation-gray))',
+					navy: 'hsl(var(--aviation-navy))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',

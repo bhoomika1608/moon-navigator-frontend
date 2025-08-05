@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Aviation-inspired design system with professional blue theme */
 
 @layer base {
   :root {
@@ -17,24 +15,38 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Aviation blue primary colors */
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 224 76% 42%;
 
+    /* Aviation secondary colors */
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 224 76% 48%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 224 76% 48%;
+
+    /* Aviation-specific colors */
+    --aviation-blue: 224 76% 48%;
+    --aviation-blue-light: 220 100% 95%;
+    --aviation-blue-dark: 224 76% 35%;
+    --aviation-gray: 216 12% 84%;
+    --aviation-navy: 222 47% 11%;
+
+    /* Gradients */
+    --gradient-aviation: linear-gradient(135deg, hsl(var(--aviation-blue)), hsl(var(--aviation-blue-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(224 76% 48% / 0.9), hsl(224 76% 35% / 0.8));
 
     --radius: 0.5rem;
 
