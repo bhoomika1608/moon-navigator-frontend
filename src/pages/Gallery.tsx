@@ -1,6 +1,5 @@
 import { useState } from "react";
 import aircraftMaintenance from "@/assets/gallery/aircraft-maintenance.jpg";
-import pilotTraining from "@/assets/gallery/pilot-training.jpg";
 import aircraftInspection from "@/assets/gallery/aircraft-inspection.jpg";
 import safetyTraining from "@/assets/gallery/safety-training.jpg";
 import groundHandling from "@/assets/ground-handling.jpg";
@@ -26,27 +25,20 @@ const Gallery = () => {
     },
     {
       id: 3,
-      category: "training",
-      title: "Pilot Training Programs",
-      image: pilotTraining,
-      description: "Comprehensive pilot training and certification programs"
-    },
-    {
-      id: 4,
       category: "aircraft",
       title: "Aircraft Inspection",
       image: aircraftInspection,
       description: "Thorough safety inspections and quality assurance"
     },
     {
-      id: 5,
+      id: 4,
       category: "operations",
       title: "Customs & Immigration Services",
       image: customsImmigration,
       description: "Complete immigration and customs assistance"
     },
     {
-      id: 6,
+      id: 5,
       category: "training",
       title: "Safety Training",
       image: safetyTraining,
