@@ -1,4 +1,10 @@
 import { useState } from "react";
+import aircraftMaintenance from "@/assets/gallery/aircraft-maintenance.jpg";
+import pilotTraining from "@/assets/gallery/pilot-training.jpg";
+import aircraftInspection from "@/assets/gallery/aircraft-inspection.jpg";
+import safetyTraining from "@/assets/gallery/safety-training.jpg";
+import groundHandling from "@/assets/ground-handling.jpg";
+import customsImmigration from "@/assets/customs-immigration.jpg";
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -8,43 +14,43 @@ const Gallery = () => {
       id: 1,
       category: "aircraft",
       title: "Commercial Aircraft Maintenance",
-      image: "/placeholder.svg",
-      description: "Professional maintenance services"
+      image: aircraftMaintenance,
+      description: "Professional maintenance services for all aircraft types"
     },
     {
       id: 2,
       category: "operations",
       title: "Ground Operations",
-      image: "/placeholder.svg", 
-      description: "Efficient ground handling operations"
+      image: groundHandling, 
+      description: "Efficient ground handling operations and support services"
     },
     {
       id: 3,
       category: "training",
       title: "Pilot Training Programs",
-      image: "/placeholder.svg",
-      description: "Comprehensive pilot training"
+      image: pilotTraining,
+      description: "Comprehensive pilot training and certification programs"
     },
     {
       id: 4,
       category: "aircraft",
       title: "Aircraft Inspection",
-      image: "/placeholder.svg",
-      description: "Thorough safety inspections"
+      image: aircraftInspection,
+      description: "Thorough safety inspections and quality assurance"
     },
     {
       id: 5,
       category: "operations",
-      title: "Airport Services",
-      image: "/placeholder.svg",
-      description: "Complete airport operational support"
+      title: "Customs & Immigration Services",
+      image: customsImmigration,
+      description: "Complete immigration and customs assistance"
     },
     {
       id: 6,
       category: "training",
       title: "Safety Training",
-      image: "/placeholder.svg",
-      description: "Aviation safety training programs"
+      image: safetyTraining,
+      description: "Aviation safety training programs and certifications"
     }
   ];
 
