@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
+import HomeServicesSection from "@/components/HomeServicesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
@@ -14,7 +14,7 @@ const Home = () => {
       <HeroSection />
       <StatsSection />
       <AboutSection />
-      <ServicesSection />
+      <HomeServicesSection />
       <WhyChooseUsSection />
       <ContactSection />
       <Footer />

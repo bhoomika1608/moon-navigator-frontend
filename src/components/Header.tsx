@@ -15,9 +15,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/src/assets/moon-aviation-logo.png" 
+              src="/src/assets/moon-aviation-plane-logo.jpg" 
               alt="Moon Aviation Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-12 h-12 object-cover rounded-lg"
             />
             <div>
               <h1 className="text-xl font-bold text-foreground">Moon Aviation</h1>
