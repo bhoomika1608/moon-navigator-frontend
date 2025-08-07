@@ -14,9 +14,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <Plane className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img 
+              src="/src/assets/moon-aviation-logo.png" 
+              alt="Moon Aviation Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-foreground">Moon Aviation</h1>
               <p className="text-sm text-muted-foreground">ONE STOP AVIATION SERVICES</p>
