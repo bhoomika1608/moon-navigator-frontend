@@ -18,7 +18,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 About 
@@ -40,23 +40,27 @@ const AboutSection = () => {
             {/* Highlights */}
             <div className="space-y-4">
               {highlights.map((highlight, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-aviation-blue flex-shrink-0" />
+                <div 
+                  key={index} 
+                  className="flex items-center gap-3 animate-slide-in-left hover-scale group"
+                  style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+                >
+                  <CheckCircle className="w-5 h-5 text-aviation-blue flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
                   <span className="text-foreground font-medium">{highlight}</span>
                 </div>
               ))}
             </div>
 
             {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
               <Link to="/about">
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Learn More About Us
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 hover:translate-x-1" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Get in Touch
                 </Button>
               </Link>
@@ -64,8 +68,8 @@ const AboutSection = () => {
           </div>
 
           {/* Image */}
-          <div className="relative">
-            <Card className="overflow-hidden border-none shadow-2xl">
+          <div className="relative animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <Card className="overflow-hidden border-none shadow-2xl hover-lift">
               <CardContent className="p-0">
                 <img
                   src={aircraftEngineImage}
@@ -75,8 +79,8 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-aviation-navy/60 to-transparent" />
                 
                 {/* Floating Contact Card */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <Card className="bg-white/95 backdrop-blur-sm border-none">
+                <div className="absolute bottom-6 left-6 right-6 animate-slide-in-up" style={{ animationDelay: "1s" }}>
+                  <Card className="bg-white/95 backdrop-blur-sm border-none hover-scale">
                     <CardContent className="p-6">
                       <h3 className="font-bold text-aviation-navy mb-2">24/7 Operations Support</h3>
                       <p className="text-sm text-muted-foreground mb-3">
