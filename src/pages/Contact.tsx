@@ -1,8 +1,11 @@
+import Header from "@/components/Header";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       {/* Contact Hero */}
       <section className="py-20 bg-gradient-to-r from-aviation-navy to-aviation-blue">
         <div className="container mx-auto px-4 text-center">
@@ -17,6 +20,7 @@ const Contact = () => {
       </section>
 
       <ContactSection />
+      <Footer />
     </div>
   );
 };

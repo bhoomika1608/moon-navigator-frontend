@@ -1,8 +1,11 @@
 import { Plane, Users, Award, Clock } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       {/* About Hero */}
       <section className="py-20 bg-gradient-to-r from-aviation-navy to-aviation-blue">
         <div className="container mx-auto px-4 text-center">
@@ -82,6 +85,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

@@ -1,8 +1,11 @@
+import Header from "@/components/Header";
 import ServicesSection from "@/components/ServicesSection";
+import Footer from "@/components/Footer";
 
 const Services = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       {/* Services Hero */}
       <section className="py-20 bg-gradient-to-r from-aviation-navy to-aviation-blue">
         <div className="container mx-auto px-4 text-center">
@@ -17,6 +20,7 @@ const Services = () => {
       </section>
 
       <ServicesSection />
+      <Footer />
     </div>
   );
 };

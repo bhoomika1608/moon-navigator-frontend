@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import aircraftMaintenance from "@/assets/gallery/aircraft-maintenance.jpg";
 import aircraftInspection from "@/assets/gallery/aircraft-inspection.jpg";
 import safetyTraining from "@/assets/gallery/safety-training.jpg";
@@ -59,6 +61,7 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <Header />
       {/* Gallery Hero */}
       <section className="py-20 bg-gradient-to-r from-aviation-navy to-aviation-blue">
         <div className="container mx-auto px-4 text-center">
@@ -120,6 +123,7 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
