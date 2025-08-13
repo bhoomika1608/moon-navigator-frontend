@@ -1,12 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, MapPin, Plane, Users, FileText, Zap } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import laguardiaImage from "@/assets/laguardia-airport.jpg";
-import passengerPlane from "@/assets/passenger-plane.jpg";
-import groundHandling from "@/assets/ground-handling.jpg";
-import customsImmigration from "@/assets/customs-immigration.jpg";
-import airCharter from "@/assets/air-charter.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -15,60 +11,6 @@ const ServicesSection = () => {
       title: "PERMITS & AIRPORT SLOTS",
       description: "Comprehensive overflight and landing permits arranged globally with our expert regulatory knowledge and 24/7 operations support.",
       image: laguardiaImage
-    },
-    {
-      icon: <Plane className="w-8 h-8" />,
-      title: "FLIGHT PLANNING & OPERATIONS",
-      description: "Expert flight planning services with weather analysis, route optimization, and NOTAMs to ensure safe and efficient operations.",
-      image: passengerPlane
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "GROUND HANDLING SERVICES",
-      description: "Complete ground handling for passenger, cargo, and technical halt flights with full GSE support and supervision.",
-      image: groundHandling
-    },
-    {
-      icon: <FileText className="w-8 h-8" />,
-      title: "CUSTOMS & IMMIGRATION",
-      description: "Professional assistance with customs clearance, immigration procedures, and documentation compliance.",
-      image: customsImmigration
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "CHARTER & MEDICAL EVACUATION",
-      description: "Air charter services, medical evacuations, and helicopter arrangements through our network of certified operators.",
-      image: airCharter
-    },
-    {
-      icon: <MapPin className="w-8 h-8" />,
-      title: "FUEL SERVICES",
-      description: "Competitive jet fuel pricing and arrangements at airports worldwide with quality assurance and cost optimization.",
-      image: laguardiaImage
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "CATERING SERVICES", 
-      description: "Premium in-flight catering services ranging from light refreshments to gourmet dining experiences.",
-      image: passengerPlane
-    },
-    {
-      icon: <FileText className="w-8 h-8" />,
-      title: "CREW SERVICES",
-      description: "Crew transportation, accommodation, and rest facilities arranged to meet regulatory requirements.",
-      image: groundHandling
-    },
-    {
-      icon: <Plane className="w-8 h-8" />,
-      title: "SLOT COORDINATION",
-      description: "Airport slot coordination and management to ensure optimal scheduling and operational efficiency.",
-      image: customsImmigration
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "WEATHER SERVICES",
-      description: "Real-time weather updates, forecasting, and meteorological briefings for safe flight operations.",
-      image: airCharter
     }
   ];
 
