@@ -9,10 +9,10 @@ const About = () => {
       {/* About Hero */}
       <section className="py-20 bg-gradient-to-r from-aviation-navy to-aviation-blue">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             About Moon Aviation
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Your trusted partner in aviation excellence, providing comprehensive 
             consulting and operational services tailored to your needs.
           </p>
@@ -23,7 +23,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <p className="text-muted-foreground mb-6">
                 Moon Aviation Services was founded with a vision to provide exceptional 
@@ -37,23 +37,23 @@ const About = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <div className="text-center p-6 bg-background border border-border rounded-lg">
-                <Users className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="text-center p-6 bg-background border border-border rounded-lg hover-lift animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <Users className="w-12 h-12 text-primary mx-auto mb-4 hover-scale" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">50+</h3>
                 <p className="text-muted-foreground">Satisfied Clients</p>
               </div>
-              <div className="text-center p-6 bg-background border border-border rounded-lg">
-                <Award className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="text-center p-6 bg-background border border-border rounded-lg hover-lift animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <Award className="w-12 h-12 text-primary mx-auto mb-4 hover-scale" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">10+</h3>
                 <p className="text-muted-foreground">Years Experience</p>
               </div>
-              <div className="text-center p-6 bg-background border border-border rounded-lg">
-                <Plane className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="text-center p-6 bg-background border border-border rounded-lg hover-lift animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                <Plane className="w-12 h-12 text-primary mx-auto mb-4 hover-scale" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">200+</h3>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
-              <div className="text-center p-6 bg-background border border-border rounded-lg">
-                <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="text-center p-6 bg-background border border-border rounded-lg hover-lift animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <Clock className="w-12 h-12 text-primary mx-auto mb-4 hover-scale" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">24/7</h3>
                 <p className="text-muted-foreground">Support Available</p>
               </div>
@@ -66,7 +66,7 @@ const About = () => {
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center">
+            <div className="text-center animate-fade-in hover-lift" style={{ animationDelay: "0.1s" }}>
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
               <p className="text-muted-foreground">
                 To provide exceptional aviation consulting and operational services 
@@ -74,7 +74,7 @@ const About = () => {
                 clients' expectations through innovative solutions and dedicated support.
               </p>
             </div>
-            <div className="text-center">
+            <div className="text-center animate-fade-in hover-lift" style={{ animationDelay: "0.3s" }}>
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Vision</h2>
               <p className="text-muted-foreground">
                 To be the leading aviation services provider in the region, recognized 
