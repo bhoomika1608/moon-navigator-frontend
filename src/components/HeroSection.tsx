@@ -48,7 +48,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-aviation-blue text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white text-aviation-blue hover:bg-white/90 hover:text-aviation-blue text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <Mail className="w-5 h-5 mr-2" />
               ops@moonaviationservices.com

@@ -73,7 +73,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            © 2024 Moon Aviation Services. All rights reserved. | Professional Aviation Support Services
+            © 2025 Moon Aviation Services. All rights reserved. | Professional Aviation Support Services
           </p>
         </div>
       </div>
