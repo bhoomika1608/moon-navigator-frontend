@@ -41,6 +41,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-white text-aviation-blue hover:bg-white/90 text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              onClick={() => window.open('tel:+919910393737', '_self')}
             >
               <Phone className="w-5 h-5 mr-2" />
               +91 9910393737
@@ -49,6 +50,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-white text-aviation-blue hover:bg-white/90 hover:text-aviation-blue text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              onClick={() => window.open('mailto:ops@moonaviationservices.com', '_self')}
             >
               <Mail className="w-5 h-5 mr-2" />
               ops@moonaviationservices.com
