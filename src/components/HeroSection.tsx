@@ -1,9 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/official-hero-image.jpg";
 
 const HeroSection = () => {
+  const { toast } = useToast();
+
+  const copyPhoneNumber = async () => {
+    try {
+      await navigator.clipboard.writeText("+919910393737");
+      toast({
+        title: "Contact Number copied to clipboard",
+        description: "+91 9910393737",
+      });
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
+  const openGmail = () => {
+    const email = "ops@moonaviationservices.com";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    window.open(gmailUrl, '_blank');
+  };
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -41,7 +61,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-white text-aviation-blue hover:bg-white/90 text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              onClick={() => window.open('tel:+919910393737', '_self')}
+              onClick={copyPhoneNumber}
             >
               <Phone className="w-5 h-5 mr-2" />
               +91 9910393737
@@ -50,7 +70,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-white text-aviation-blue hover:bg-white/90 hover:text-aviation-blue text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              onClick={() => window.open('mailto:ops@moonaviationservices.com', '_self')}
+              onClick={openGmail}
             >
               <Mail className="w-5 h-5 mr-2" />
               ops@moonaviationservices.com
