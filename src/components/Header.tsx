@@ -1,16 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Plane } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 transition-all duration-300">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 hover-scale">
@@ -44,12 +50,22 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* Contact Info & Mobile Menu Button */}
+          {/* Contact Info & Theme Toggle & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <div className="hidden lg:block text-right">
               <p className="text-sm text-muted-foreground">ops@moonaviationservices.com</p>
               <p className="text-sm font-semibold text-foreground">+91 9910393737</p>
             </div>
+            
+            {/* Theme Toggle */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="transition-all duration-300 hover:scale-110"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            </Button>
             
             {/* Mobile menu button */}
             <Button

@@ -42,7 +42,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             Moon Aviation
@@ -57,10 +57,10 @@ const HeroSection = () => {
           </p>
 
           {/* Contact Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in px-4" style={{ animationDelay: "0.6s" }}>
             <Button 
               size="lg" 
-              className="bg-white text-aviation-blue hover:bg-white/90 text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white text-aviation-blue hover:bg-white/90 text-lg px-6 sm:px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl mx-2"
               onClick={copyPhoneNumber}
             >
               <Phone className="w-5 h-5 mr-2" />
@@ -69,7 +69,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="bg-white text-aviation-blue hover:bg-white/90 hover:text-aviation-blue text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white text-aviation-blue hover:bg-white/90 hover:text-aviation-blue text-lg px-6 sm:px-8 transition-all duration-300 hover:scale-105 hover:shadow-xl mx-2"
               onClick={openGmail}
             >
               <Mail className="w-5 h-5 mr-2" />
