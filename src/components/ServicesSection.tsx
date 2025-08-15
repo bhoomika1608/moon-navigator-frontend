@@ -74,7 +74,7 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-20 bg-aviation-blue-light">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-aviation-navy mb-4">
